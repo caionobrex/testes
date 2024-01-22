@@ -2,9 +2,9 @@ export class Post {
   #id: string
   #likesCount: number
 
-  constructor(id: string) {
+  constructor(id: string, likesCount?: number) {
     this.#id = id
-    this.#likesCount = 0
+    this.#likesCount = likesCount ?? 0
   }
 
   incrementLikesCount() {
